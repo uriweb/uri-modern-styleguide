@@ -1,0 +1,59 @@
+/* ==============================
+   GITHUB GISTS
+   ============================== */
+
+.gist {
+    
+    margin-bottom: 2rem;
+    
+    .gist-file {
+        border: none !important;
+    }
+    
+    .gist-data {
+        background-color: #f0f2f5 !important;
+        padding: .5rem;
+        border: none !important;
+        border-radius: .2rem !important;
+    }
+    
+    .highlight {
+        
+        background: none !important;
+        
+        td:first-child,
+        tr:first-child {
+            display: none;
+        }
+        
+        tr:nth-child(even) {
+            background: none;
+        }
+        
+    } // .highlight
+    
+    .blob-wrapper {
+        border-radius: 0 !important;
+    }
+    
+    .gist-meta {
+        
+        padding: .5rem .2rem !important;
+        font-size: 10px !important;
+        color: #aaa !important;
+        background: none !important;
+    
+        a {
+
+            color: #aaa !important;
+
+            &:hover,
+            &:focus {
+                color: #666 !important;
+            }
+
+        } // a
+        
+    } // .gist-meta
+    
+} // .gist
