@@ -4,6 +4,14 @@
 
 .attributes {
 	
+	font-family: $type-sans;
+	font-size: 90%;
+	
+	h2 {
+		padding-bottom: .5rem;
+		border-bottom: 1px solid #ccc;
+	}
+	
 	ul {
 		list-style-type: none;
 		margin: 0;

@@ -2,16 +2,8 @@
    LAYOUT
    ============================== */
 
-main>section {
-    margin-top: 120px;
-    padding-top: 80px;
-    border-top: 1px solid #ccc;
-    clear: both;
-}
-
-main>section>article,
-main>section>article>article {
-    margin-top: 80px;
+article {
+    margin-bottom: 4rem;
     clear: both;
 }
 
@@ -60,4 +52,47 @@ ul.construction-list span {
 ul.construction-list li.section {
     margin-top: .6rem;
     font-weight: 700;
+}
+
+.html-docs {
+	display: none;
+	padding: 1.5rem;
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: .2rem;
+}
+
+#show-html-docs {
+	display: none;
+}
+
+.show-html-docs-label {
+	
+	display: inline-block;
+	color: $link;
+	padding: 8px 10px 5px;
+	border-radius: .2rem;
+	background: #eee;
+	font-family: $type-sans;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	
+	&:hover,
+	&:focus {
+		cursor: pointer;
+		background: $grey;
+	}
+	
+}
+
+#show-html-docs:checked {
+	
+	& ~ .show-html-docs-label {
+		background: $link;
+		color: $white;
+	}
+	
+	& ~ .html-docs {
+		display: block;
+	}
 }
