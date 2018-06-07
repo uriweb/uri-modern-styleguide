@@ -56,10 +56,31 @@ ul.construction-list li.section {
 
 .html-docs {
 	display: none;
+	position: relative;
 	padding: 1.5rem;
-	background: #fff;
-	border: 1px solid #eee;
+	background: #fdfdfd;
+	border: 1px solid #e3e3e3;
 	border-radius: .2rem;
+}
+
+.html-docs:before {
+	position: absolute;
+	left: 1.8rem;
+	top: -9px;
+	display: block;
+	content: '';
+	width: 15px;
+	height: 15px;
+	background: #fdfdfd;
+	border-left: 1px solid #e3e3e3;
+	border-top: 1px solid #e3e3e3;
+	transform: rotate(45deg);
+}
+
+.html-docs h1 {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 1.5rem;
+	max-width: 100%;
 }
 
 #show-html-docs {
@@ -75,7 +96,7 @@ ul.construction-list li.section {
 	background: #eee;
 	font-family: $type-sans;
 	font-size: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 20px;
 	
 	&:hover,
 	&:focus {
