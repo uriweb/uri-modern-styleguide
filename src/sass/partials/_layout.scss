@@ -62,7 +62,6 @@ ul.construction-list li.section {
 	
 	display: none;
 	position: relative;
-	padding: 1.5rem;
 	background: #fdfdfd;
 	border: 1px solid #e3e3e3;
 	border-radius: .2rem;
@@ -75,16 +74,29 @@ ul.construction-list li.section {
 		content: '';
 		width: 15px;
 		height: 15px;
-		background: #fdfdfd;
+		background: #f0f2f5;
 		border-left: 1px solid #e3e3e3;
 		border-top: 1px solid #e3e3e3;
 		transform: rotate(45deg);
 	}
 	
-	h1 {
-		border-bottom: 1px solid #ddd;
-		padding-bottom: 1.5rem;
+	&>h1 {
+		border-bottom: 1px solid #e3e3e3;
+		padding: 1.5rem;
+		width: 100%;
 		max-width: 100%;
+		background: #f0f2f5;
+		border-radius: .15rem .15rem 0 0;
+		box-sizing: border-box;
+	}
+	
+	article {
+		padding: 0 1.5rem;
+	}
+	
+	article:not(:last-child) {
+		padding-bottom: 2rem;
+		border-bottom: 1px dashed #ccc;
 	}
 	
 }
