@@ -54,33 +54,39 @@ ul.construction-list li.section {
     font-weight: 700;
 }
 
+.block-margin {
+	margin-bottom: 2rem;
+}
+
 .html-docs {
+	
 	display: none;
 	position: relative;
 	padding: 1.5rem;
 	background: #fdfdfd;
 	border: 1px solid #e3e3e3;
 	border-radius: .2rem;
-}
-
-.html-docs:before {
-	position: absolute;
-	left: 1.8rem;
-	top: -9px;
-	display: block;
-	content: '';
-	width: 15px;
-	height: 15px;
-	background: #fdfdfd;
-	border-left: 1px solid #e3e3e3;
-	border-top: 1px solid #e3e3e3;
-	transform: rotate(45deg);
-}
-
-.html-docs h1 {
-	border-bottom: 1px solid #ddd;
-	padding-bottom: 1.5rem;
-	max-width: 100%;
+	
+	&:before {
+		position: absolute;
+		left: 1.8rem;
+		top: -9px;
+		display: block;
+		content: '';
+		width: 15px;
+		height: 15px;
+		background: #fdfdfd;
+		border-left: 1px solid #e3e3e3;
+		border-top: 1px solid #e3e3e3;
+		transform: rotate(45deg);
+	}
+	
+	h1 {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 1.5rem;
+		max-width: 100%;
+	}
+	
 }
 
 #show-html-docs {
