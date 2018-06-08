@@ -8,9 +8,15 @@
     padding: 15px;
     font-size: .8rem;
     color: #fff;
+	line-height: initial;
+	margin: 0;
 }
 
 .palette {
+	
+	list-style: none;
+	margin: 0;
+	font-family: $type-sans;
     
     &:not(:last-child) {
         margin-bottom: 30px;
@@ -27,15 +33,20 @@
     &.spaced li:not(:first-of-type) {
         margin-bottom: 2px;
     }
-
-    li:not(:first-of-type) span:nth-child(2),
-    li:first-of-type span:nth-child(3) {
+	
+	.palette-name,
+	.palette-designation,
+	.palette-info {
+		display: inline-block;
+	}
+		
+    .palette-info {
         float: right;
-        font-family: monospace;
-        font-size: 1rem;
+        font-family: $type-mono;
+        font-size: .8rem;
     }
 
-    li:first-of-type span:first-child {
+    li:first-of-type .palette-name {
         display: block;
         margin-bottom: 40px;
         font-size: 1rem;
@@ -45,6 +56,10 @@
 } // .palette
 
 .contrasts {
+	
+	list-style: none;
+	margin: 0;
+	font-family: $type-sans;
 
     li {
         margin-bottom: 10px;
@@ -57,23 +72,23 @@
         clear: both;
     }
 
-    li span:first-child,
-    li span:last-child {
+    .contrast-info,
+    .contrast-ratio {
         float: right;
-        font-family: monospace;
-        font-size: 1rem;
+        font-family: $type-mono;
+        font-size: .8rem;
         text-align: right;
         padding-left: 30px;
     }
 
-    li span:nth-child(2) {
+    .contrast-normal {
         display: block;
         margin-bottom: 10px;
         font-size: .8rem;
     }
 
-    li span.large {
-        font-family: 'Hind', sans-serif;
+    .contrast-large {
+        font-family: $type-sans;
         font-size: 18pt;
     }
     
@@ -84,28 +99,32 @@
     & {
         margin: 20px 0;
     }
+	
+	.contrast-acceptance {
+		
+		display: flex;
+		
+		div {
+			font-family: $type-mono;
+			font-size: .8rem;
+			padding: 5px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		
+	}
 
-    span {
-        display: block;
-        font-family: monospace;
-        font-size: 1rem;
-        padding: 5px;
-        text-align: center;
-    }
-
-    span.acceptable {
-        clear: left;
-        float: left;
+    .acceptable {
         background: #84f57f;
     }
 
-    span.unacceptable {
-        float: right;
+    .unacceptable {
         background: #d0aab4;
     }
 
     .scale {
         width: 100%;
+		box-sizing: border-box;
         padding: 0 2%;
         height: 50px;
         line-height: 50px;
@@ -116,7 +135,7 @@
     }
 
     .scale.large {
-        font-family: 'Hind', sans-serif;
+        font-family: $type-sans;
         font-size: 18pt;
     }
     
