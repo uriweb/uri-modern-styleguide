@@ -2,7 +2,7 @@
    LAYOUT
    ============================== */
 
-article {
+section>article {
     margin-bottom: 4rem;
     clear: both;
 }
@@ -90,11 +90,13 @@ ul.construction-list li.section {
 		box-sizing: border-box;
 	}
 	
-	article {
+	&>article {
+		margin-bottom: 4rem;
+		clear: both;
 		padding: 0 1.5rem;
 	}
 	
-	article:not(:last-child) {
+	&>article:not(:last-child) {
 		padding-bottom: 2rem;
 		border-bottom: 1px dashed #ccc;
 	}
@@ -134,4 +136,10 @@ ul.construction-list li.section {
 	& ~ .html-docs {
 		display: block;
 	}
+}
+
+.pagenav .cl-dcard img {
+	width: 16px;
+	height: auto;
+	margin: 1rem;
 }
