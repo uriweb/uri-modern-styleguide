@@ -33,30 +33,6 @@ a.component {
     } 
 }
 
-ul.list {
-    & {
-        margin: 2rem 0;
-    }
-    li {
-        position: relative;
-        width: 100%;
-        max-width: 600px;
-        padding-left: 1.8rem;
-        padding-bottom: 2rem;
-    }
-    li:before {
-        position: absolute;
-        left: 0;
-        top: 2px;
-        content: '';
-        display: block;
-        width: 8px;
-        height: 8px;
-        background: #999;
-        border-radius: 50%;
-    }
-} // ul.list
-
 code, p.code, a.code {
     font-family: $type-mono;
     font-weight: normal;
