@@ -18,8 +18,6 @@ function uri_modern_styleguide_enqueues() {
 
 	wp_enqueue_style( 'uri-modern-styleguide-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ), wp_get_theme()->get( 'Version' ) );
 
-	wp_enqueue_script( 'uri-modern-styleguide-script', get_stylesheet_directory_uri() . '/js/script.min.js', array(), wp_get_theme()->get( 'Version' ) );
-
 	/**
 	 * Enqueue Google Code Prettify
 	 *

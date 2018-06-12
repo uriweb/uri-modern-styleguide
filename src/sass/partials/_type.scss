@@ -10,7 +10,7 @@ h1.entry-title {
 }
 
 .type-intro:last-of-type {
-     padding-bottom: 2rem;
+     margin-bottom: 4rem;
 }
 
 .indent {
@@ -62,7 +62,15 @@ p.code.comment {
 pre p.code.shortcode {
     padding-top: 0;
 }
-
+xmp {
+	font-size: .9rem;
+	background: #edeff2;
+	padding: 1rem;
+	border-radius: .2rem;
+	margin-bottom: 2rem;
+	white-space: normal;
+	overflow-x: auto;
+}
 code, a.code {
     & {
         position: relative;

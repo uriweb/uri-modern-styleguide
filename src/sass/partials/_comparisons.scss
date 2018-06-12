@@ -64,13 +64,10 @@
         }
         &>xmp {
             padding: .8rem;
-			font-size: .9rem;
 			box-sizing: border-box;
 			margin: 0;
-			background: #edeff2;
-			white-space: normal;
-			overflow-x: auto;
 			width: 100%;
+			border-radius: 0 0 .2rem .2rem;
         }
         &.do>xmp {
             border-top: 10px solid #389f3c;
@@ -102,6 +99,7 @@
 			&>xmp {
 				padding: 1rem 1rem 1rem 2rem;
 				width: calc( 100% - 4rem );
+				border-radius: 0 .2rem .2rem 0;
 			}
 			
 			&.do>xmp {
