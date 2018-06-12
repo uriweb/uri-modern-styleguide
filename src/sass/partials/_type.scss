@@ -19,18 +19,18 @@ h1.entry-title {
 }
 
 a.component {
-    & {
-        color: #006fce;
-        text-decoration: none;
-        margin: 0 3px;
-        border-bottom: 1px dotted #006fce;
-        transition: all .2s;
-    }
+	
+	color: #006fce;
+	text-decoration: none;
+	margin: 0 3px;
+	border-bottom: 1px dotted #006fce;
+	transition: all .2s;
+	
     &:hover,
     &:focus {
         color: #000;
         border-bottom: 1px dotted #000;
-    } 
+    }
 }
 
 code, p.code, a.code {
@@ -72,17 +72,17 @@ xmp {
 	overflow-x: auto;
 }
 code, a.code {
-    & {
-        position: relative;
-        top: -.05rem;
-        padding: .2rem .4rem;
-        margin: 0 .1rem;
-        border-radius: .2rem;
-        color: #000;
-        background: #edeff2;
-        text-decoration: none;
-    }
-    &.class {
+
+	position: relative;
+	top: -.05rem;
+	padding: .2rem .4rem;
+	margin: 0 .1rem;
+	border-radius: .2rem;
+	color: #000;
+	background: #edeff2;
+	text-decoration: none;
+
+	&.class {
         background: #a1ebc1;
     }
     &.class.second {
@@ -121,10 +121,10 @@ code, a.code {
     &.num {
         color: #d86c00;
         white-space: pre-wrap;
-    } 
+    }
     &.attr {
         color: #8f00d0;
-        white-space: pre-wrap;       
+        white-space: pre-wrap;
     }
     &.link {
         color: #555;
@@ -163,7 +163,7 @@ pre .prettyprint .com {
 .type {
 	
 	list-style: none;
-	margin: 0 0 40px 0;
+	margin: 0 0 40px;
     color: #999;
 	
 	* {
