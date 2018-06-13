@@ -1,0 +1,122 @@
+/* ==============================
+   COMPARISONS
+   ============================== */
+
+
+.comparison {
+	
+	font-family: $type-sans;
+	font-size: 1rem;
+	
+    &>img {
+        width: 100% !important;
+        max-width: 400px;
+        border: 1px dashed #ccc;
+        float: none !important;
+        margin: 0 !important;
+    }
+
+    &>span {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 10px 0 1rem;
+        padding-top: 10px;
+        font-weight: 700;
+    }
+
+    &.do>span {
+        border-top: 10px solid #389f3c;
+        color: #389f3c;
+    }
+
+    &.instead>span {
+        border-top: 10px solid #0097c4;
+        color: #0097c4;
+    }
+
+    &.dont>span {
+        border-top: 10px solid #be3535;
+        color: #be3535;
+    }
+
+    &.code {
+		
+		display: block;
+		margin: 1rem 0;
+		
+		p:empty {
+			display: none;
+		}
+		
+        &>div {
+            font-weight: 700;
+            padding: 0 0 .5rem;
+        }
+        &.do>div {
+            color: #389f3c;
+        }
+        &.instead>div {
+            color: #0097c4;
+        }
+        &.dont>div {
+            color: #be3535;
+        }
+        &>xmp {
+            padding: .8rem;
+			box-sizing: border-box;
+			margin: 0;
+			width: 100%;
+			border-radius: 0 0 .2rem .2rem;
+        }
+        &.do>xmp {
+            border-top: 10px solid #389f3c;
+        }
+        &.instead>xmp {
+            border-top: 10px solid #0097c4;
+        }
+        &.dont>xmp {
+            border-top: 10px solid #be3535;
+        }
+    } // .comparisons.code
+    
+} // .comparisons
+
+@media screen and (min-width: $break1) {
+	
+	.comparison {
+		
+		&.code {
+			
+			display: flex;
+			align-items: center;
+			
+			&>div {
+				padding: 1rem 1rem 1rem 0;
+				width: 4rem;
+			}
+			
+			&>xmp {
+				padding: 1rem 1rem 1rem 2rem;
+				width: calc( 100% - 4rem );
+				border-radius: 0 .2rem .2rem 0;
+			}
+			
+			&.do>xmp {
+				border-top: none;
+            	border-left: 10px solid #389f3c;
+			}
+			&.instead>xmp {
+				border-top: none;
+				border-left: 10px solid #0097c4;
+			}
+			&.dont>xmp {
+				border-top: none;
+				border-left: 10px solid #be3535;
+			}
+			
+		}
+		
+	}
+	
+}

@@ -1,4 +1,67 @@
 /* ==============================
-   MAIN
+   BREAKPOINTS
    ============================== */
 
+$break0: 420px; // Special sub-mobile cases
+$break1: 600px; // Catch phones/phablets (default, most of the time...)
+$break2: 800px; // Catch small tablets
+$break3: 1000px; // Catch full displays/large tablets
+
+
+/* ==============================
+   FONTS
+   ============================== */
+
+$type-header: 'Lato', 'Hind', Arial, sans-serif;
+$type-sans: 'Hind', Arial, sans-serif;
+$type-serif: 'Charter', 'Georgia', serif;
+$type-numeric: 'Rubik', 'Hind', Arial, sans-serif;
+
+
+/* ==============================
+   COLORS
+   ============================== */
+
+$lightblue: #c0ddf2;
+$keaneyblue: #2277b3;
+$midblue: #30557e;
+$blue: #002147;
+$darkblue: #001228;
+
+$lightgold: #fefada;
+$midgold: #ffd453;
+$gold: #c4960c;
+
+$white: #ffffff;
+$lightgrey: #fafafa;
+$grey: #dddddd;
+$midgrey: #999999;
+$darkgrey: #555555;
+$black: #000000;
+
+$link: #0047c2;
+$linkhover: #003287;
+
+$accentblue: #057fd4;
+
+
+/* ==============================
+   BOX SHADOW LEVELS
+   ============================== */
+
+// [x-offset y-offset blur-radius color]
+$level1: 0 .1rem .3rem rgba(0,0,0,0.1);
+$level2: 0 .3rem 1rem rgba(0,0,0,0.2);
+$level3: 0 .3rem 1rem rgba(0,0,0,0.35);
+
+
+/* ==============================
+   PARTIALS
+   ============================== */
+
+@import 'partials/type';
+@import 'partials/layout';
+@import 'partials/comparisons';
+@import 'partials/shortcodes';
+@import 'partials/palettes';
+@import 'partials/gists';
