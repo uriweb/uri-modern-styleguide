@@ -12,7 +12,7 @@ URI Modern Styleguide is a WordPress theme designed for the University of Rhode 
 
 ## Theme details
 
-[![Master Build Status](https://travis-ci.org/uriweb/uri-modern-styleguide.svg?branch=master "Master build status")](https://travis-ci.org/uriweb/uri-modern-styleguide)
+[![Master Build Status](https://travis-ci.com/uriweb/uri-modern-styleguide.svg?branch=master "Master build status")](https://travis-ci.com/uriweb/uri-modern-styleguide)
 [![CodeFactor](https://www.codefactor.io/repository/github/uriweb/uri-modern-styleguide/badge/master)](https://www.codefactor.io/repository/github/uriweb/uri-modern-styleguide/overview/master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6102f3957db34d90a156cc9bfd24861c?branch=master)](https://www.codacy.com/app/uriweb/uri-modern-styleguide?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=uriweb/uri-modern-styleguide&amp;utm_campaign=Badge_Grade)
 [![devDependencies Status](https://david-dm.org/uriweb/uri-modern-styleguide/dev-status.svg "devDependencies status")](https://david-dm.org/uriweb/uri-modern-styleguide?type=dev)
